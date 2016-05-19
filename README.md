@@ -1,65 +1,15 @@
-#EyeTracker_Raspberry2
-EyeTracker for Raspberry2
+# Steps for use eye tracker with UDOO (tested in Quad Core version)
 
-We want create a simple device for detect simple eye movement (RIGHT,LEFT,CENTER) and use this detection
-to create a gesture for control device like IR Remote control, windows/doors, television, every electrical device.
+### Select OS
+from http://www.udoo.org/downloads/
+select UDOObuntu_quad_v1.1.img (or the dualcore image)
+fit the image into a microSD card (at least 8 Gb class 10)
+following the guide in the download page.
 
-We have choose Raspberry 2 and Python (for the moment 2.7) to make it simple to reproduce and simple to manage.
-We also use a Logitech camera and an Arduino for our purpose.
+### Configure OS
+when the system has booted, change use the tools "Udoo configuration" on the desktop
+to change keyboard layout, timezone, password, expand the filesystem
 
-####To use this software you have 2 ways:
-#####First way
-
-Download the image of the entire OS (https://mega.nz/#!ZpRgTCDS!h1Wbr3xWjf9SWGIOARfMCLsp5QIq47laIzVHcqbkTIk) and fit it into a MicroSD card (we suggest 16 Gb Evo Samsung ~10,00 €)
-
-Start your Raspberry, open a console and run "ifconfig" to check the IP address.
-ie. 192.168.0.6   
-
-#####Now connect a USB camera and check if the system recognize it, use this command
-ls /dev | grep video0
-if  "video0" is the output, the camera are correctly recognized
-
-#####now if you want use another computer to connect to the Raspberry, you need a terminal client (ie. on Windows use PUTTY)
-#####remember: if you launch a script with graphical output (like this OpenCV) you need to redirect the output of the terminal using this command
-export DISPLAY=:0.0
-this permit to render the graphical output in the raspberry attached monitor.
-
-
-
-#####We need to fix an issue in the Virtual Environment
-#####update your ~/.profile  file to include the following lines in the end of the file:
-nano ~/.profile  
-
-export WORKON_HOME=$HOME/.virtualenvs  
-source /usr/local/bin/virtualenvwrapper.sh  
-
-#####Now reload the profile and all works like a charm (hopefully)
-source ~/.profile
-
-#####And activate Virtual Environment
-workon cv
-
-#####Now clone the repository (be sure you are in the user folder /home/pi)
-git clone https://github.com/davidecaminati/EyeTracker_Raspberry2
-
-#####move into directory
-cd EyeTracker_Raspberry2
-
-#####start the program
-python external_eyetraking_webcam.py -o True -e 0
-
-
-
-
-
-
-#####Second way
-
-Start from scratch downloading the Raspbian image from this link (https://www.raspberrypi.org/downloads/) 
-then follow the instruction to fit the Image into your MicroSD card, after this, follow the guide of installation for
-OpenCV (https://github.com/davidecaminati/EyeTracker_Raspberry2/blob/master/external_eyetraking_webcam.py)
-
-
-
-
-
+### Start the installation script 
+wget  https://raw.githubusercontent.com/davidecaminati/EyeTracker_Raspberry2/master/install_eyetracking.sh
+sudo sh ./install_eyetracking.sh
