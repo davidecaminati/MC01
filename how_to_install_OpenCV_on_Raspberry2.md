@@ -2,7 +2,7 @@
 
 ###follow this guide to install OpenCV (thanks to Adrian Rosebrock)
 
-###http://www.pyimagesearch.com/2015/02/23/install-opencv-and-python-on-your-raspberry-pi-2-and-b/
+http://www.pyimagesearch.com/2015/02/23/install-opencv-and-python-on-your-raspberry-pi-2-and-b/
 
 ###Step by step guide
 
