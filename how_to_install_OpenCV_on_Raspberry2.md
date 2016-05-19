@@ -1,11 +1,11 @@
 ###Install OpenCV on raspberry 2
-=======
-###follow this guide to install OpenCV (thanks to Adrian Rosebrock)
------------
-###http://www.pyimagesearch.com/2015/02/23/install-opencv-and-python-on-your-raspberry-pi-2-and-b/
------------
-###Step by step guide
------------
+
+##follow this guide to install OpenCV (thanks to Adrian Rosebrock)
+
+##http://www.pyimagesearch.com/2015/02/23/install-opencv-and-python-on-your-raspberry-pi-2-and-b/
+
+##Step by step guide
+
 
 sudo apt-get update
 sudo apt-get upgrade
