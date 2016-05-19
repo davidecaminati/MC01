@@ -4,7 +4,7 @@
 
 http://www.pyimagesearch.com/2015/02/23/install-opencv-and-python-on-your-raspberry-pi-2-and-b/
 
-###Or follow my Step by step guide
+###or follow my Step by step guide
 
 sudo apt-get update
 sudo apt-get upgrade
@@ -26,7 +26,7 @@ sudo python get-pip.py
 
 sudo pip install virtualenv virtualenvwrapper
 
-###Then, update your ~/.profile  file to include the following lines:
+###then, update your ~/.profile  file to include the following lines:
 nano ~/.profile  
 export WORKON_HOME=$HOME/.virtualenvs  
 source /usr/local/bin/virtualenvwrapper.sh  
@@ -60,7 +60,7 @@ ln -s /usr/local/lib/python2.7/site-packages/cv2.so cv2.so
 ln -s /usr/local/lib/python2.7/site-packages/cv.py cv.py  
 
 
-### Test it!
+### test it!
 workon cv  
 python  
 import cv2  
@@ -103,5 +103,5 @@ sudo apt-get install arduino
 
 pip install pyfirmata
 
-### For audio management
+### for audio management
 sudo apt-get install python-pygame
