@@ -1,7 +1,7 @@
 #EyeTracker_Raspberry2
 EyeTracker for Raspberry2
 
-Install OpenCV on raspberry 2
+###Install OpenCV on raspberry 2
 =======
 follow this guide to install OpenCV (thanks to Adrian Rosebrock)
 -----------
