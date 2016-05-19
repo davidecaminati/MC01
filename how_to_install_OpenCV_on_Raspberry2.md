@@ -4,8 +4,7 @@
 
 http://www.pyimagesearch.com/2015/02/23/install-opencv-and-python-on-your-raspberry-pi-2-and-b/
 
-###Step by step guide
-
+###Or follow my Step by step guide
 
 sudo apt-get update
 sudo apt-get upgrade
@@ -22,6 +21,7 @@ sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
 sudo apt-get install libatlas-base-dev gfortran
 
 wget https://bootstrap.pypa.io/get-pip.py
+
 sudo python get-pip.py
 
 sudo pip install virtualenv virtualenvwrapper
