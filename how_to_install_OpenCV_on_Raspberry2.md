@@ -89,13 +89,18 @@ ln Handcart-lift-rotary/Python/my_collage.py opencv-2.4.10/samples/python2/
 
 ### make it executable
 ~/opencv-2.4.10/samples/python2
+
 chmod +x digits_video_v2.py
+
 chmod +x facedetect_mio_detect_cyrcle.py
+
 chmod +x facedetect_mio.py
+
 chmod +x my_collage.py
 
 ### install firmata library for comunication with Arduino
 sudo apt-get install arduino
+
 pip install pyfirmata
 
 ### For audio management
