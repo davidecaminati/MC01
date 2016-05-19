@@ -12,4 +12,5 @@ to change keyboard layout, timezone, password, expand the filesystem
 
 ### Start the installation script 
 wget  https://github.com/davidecaminati/MC01/blob/master/install_eyetracking.sh
+
 sudo sh ./install_eyetracking.sh
