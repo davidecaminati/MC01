@@ -79,10 +79,15 @@ git clone https://github.com/davidecaminati/Handcart-lift-rotary
 
 ### link some file 
 ln Handcart-lift-rotary/Python/facedetect_mio.py opencv-2.4.10/samples/python2/
+
 ln Handcart-lift-rotary/Python/digits.py opencv-2.4.10/samples/python2/
+
 ln Handcart-lift-rotary/Python/digits_video_v2.py opencv-2.4.10/samples/python2/
+
 ln Handcart-lift-rotary/Python/facedetect_mio_detect_cyrcle.py opencv-2.4.10/samples/python2/
+
 ln Handcart-lift-rotary/Python/How\ to\ use.txt opencv-2.4.10/samples/python2/    
+
 ln Handcart-lift-rotary/Python/my_collage.py opencv-2.4.10/samples/python2/
 
 ### make it executable
