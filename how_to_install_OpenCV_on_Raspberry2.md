@@ -7,7 +7,9 @@ http://www.pyimagesearch.com/2015/02/23/install-opencv-and-python-on-your-raspbe
 ###or follow my Step by step guide
 
 sudo apt-get update
+
 sudo apt-get upgrade
+
 sudo rpi-update
 
 sudo apt-get install build-essential cmake pkg-config
